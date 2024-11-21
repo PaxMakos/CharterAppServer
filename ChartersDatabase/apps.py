@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ChartersdatabaseConfig(AppConfig):
+class ChartersDatabaseConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'chartersDatabase'
+    name = 'ChartersDatabase'
