@@ -7,14 +7,20 @@ from ..models import Port
 @require_http_methods(["GET"])
 @csrf_exempt
 def getPortsNames(request):
-    ports = Port.objects.all()
-    portsNames = [port.name for port in ports]
-    return JsonResponse(portsNames, safe=False)
+    try:
+        ports = Port.objects.all()
+        portsNames = [port.name for port in ports]
+        return JsonResponse({"status": "success", "ports": portsNames}, safe=False)
+    except Exception as e:
+        return JsonResponse({"status": "error", "message": str(e)}, safe=False)
 
 
 @require_http_methods(["GET"])
 @csrf_exempt
 def getPort(request):
-    portName = request.GET.get("portName")
-    port = Port.objects.get(name=portName)
-    return JsonResponse(port.__dict__, safe=False)
+    try:
+        portName = request.GET.get("portName")
+        port = Port.objects.get(name=portName)
+        return JsonResponse({"status": "success", "port": port.__dict__}, safe=False)
+    except Exception as e:
+        return JsonResponse({"status": "error", "message": str(e)}, safe=False)
