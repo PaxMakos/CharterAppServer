@@ -11,7 +11,9 @@ class Port(models.Model):
     email = models.CharField(max_length=100, null=True, blank=True)
     website = models.URLField(null=True, blank=True)
     places = models.IntegerField(null=True, blank=True)
-    description = models.TextField()
+    description = models.TextField(default="")
+    longitude = models.FloatField(default=0)
+    latitude = models.FloatField(default=0)
 
 
 class Boat(models.Model):
