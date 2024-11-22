@@ -3,8 +3,8 @@ from .views import boatViews, charterViews, portViews, authViews
 
 
 urlpatterns = [
-    path('login/', authViews.login),
-    path('logout/', authViews.logout),
+    path('login/', authViews.loginToApp),
+    path('logout/', authViews.logoutFromApp),
     path('register/', authViews.register),
     path('boats/byPort/', boatViews.getBoatsByPort),
     path('boats/byCompany/', boatViews.getBoatsByCompany),
@@ -12,5 +12,5 @@ urlpatterns = [
     path('charters/', charterViews.getCharters),
     path('charters/add/', charterViews.addCharter),
     path('ports/', portViews.getPortsNames),
-    path('ports/details', portViews.getPort)
+    path('port/details/', portViews.getPort)
     ]

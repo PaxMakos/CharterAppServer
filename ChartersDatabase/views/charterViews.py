@@ -1,7 +1,7 @@
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
-from ..models import Charter
+from ..models import Charter, Boat
 
 
 @require_http_methods(["GET"])
@@ -34,8 +34,8 @@ def addCharter(request):
         price = request.POST.get("price")
         user = request.user
 
-        charter = Charter.objects.create(
-            boat__name=boatName,
+        Charter.objects.create(
+            boat=Boat.objects.get(name=boatName),
             startDate=startDate,
             endDate=endDate,
             price=price,

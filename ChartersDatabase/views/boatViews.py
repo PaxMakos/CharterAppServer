@@ -34,6 +34,20 @@ def getBoat(request):
     try:
         boatName = request.GET.get("boatName")
         boat = Boat.objects.get(name=boatName)
-        return JsonResponse({"status": "success", "boat": boat.__dict__}, safe=False)
+        toReturn = {
+            "name": boat.name,
+            "boatModel": boat.boatModel,
+            "productionYear": boat.productionYear,
+            "length": boat.length,
+            "width": boat.width,
+            "draft": boat.draft,
+            "company": boat.company,
+            "motherPort": boat.motherPort.name,
+            "beds": boat.beds,
+            "pricePerDay": boat.pricePerDay,
+            "description": boat.description
+        }
+
+        return JsonResponse({"status": "success", "boat": toReturn}, safe=False)
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, safe=False)

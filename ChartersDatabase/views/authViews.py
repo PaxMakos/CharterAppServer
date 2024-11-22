@@ -8,7 +8,7 @@ from django.core.exceptions import ValidationError
 
 @require_http_methods(["POST"])
 @csrf_exempt
-def login(request):
+def loginToApp(request):
     try:
         username = request.POST['username']
         password = request.POST['password']
@@ -25,7 +25,7 @@ def login(request):
 
 @require_http_methods(["POST"])
 @csrf_exempt
-def logout(request):
+def logoutFromApp(request):
     try:
         logout(request)
         return JsonResponse({'status': 'success'})

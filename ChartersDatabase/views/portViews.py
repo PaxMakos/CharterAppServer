@@ -21,6 +21,21 @@ def getPort(request):
     try:
         portName = request.GET.get("portName")
         port = Port.objects.get(name=portName)
-        return JsonResponse({"status": "success", "port": port.__dict__}, safe=False)
+
+        toReturn = {
+            "name": port.name,
+            "country": port.country,
+            "city": port.city,
+            "address": port.address,
+            "phoneNumber": port.phone,
+            "email": port.email,
+            "website": port.website,
+            "places": port.places,
+            "description": port.description,
+            "longitude": port.longitude,
+            "latitude": port.latitude
+        }
+
+        return JsonResponse({"status": "success", "port": toReturn}, safe=False)
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, safe=False)
