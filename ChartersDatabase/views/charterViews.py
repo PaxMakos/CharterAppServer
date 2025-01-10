@@ -2,6 +2,7 @@ from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 from ..models import Charter, Boat
+import datetime
 
 
 @require_http_methods(["GET"])
@@ -33,6 +34,9 @@ def addCharter(request):
         endDate = request.POST.get("endDate")
         price = request.POST.get("price")
         user = request.user
+
+        startDate = datetime.datetime.strptime(startDate, "%Y-%m-%d").date()
+        endDate = datetime.datetime.strptime(endDate, "%Y-%m-%d").date()
 
         existingCharters = Charter.objects.filter(boat__name=boatName)
         for charter in existingCharters:
