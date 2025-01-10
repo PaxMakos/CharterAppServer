@@ -1,0 +1,1122 @@
+[
+    {
+        "model": "ChartersDatabase.port",
+        "pk": 1,
+        "fields": {
+            "name": "Port Sztynort",
+            "country": "Poland",
+            "city": "Sztynort",
+            "address": "Sztynort 11, 11-600 Węgorzewo",
+            "phone": "123456789",
+            "email": "info@sztynort.pl",
+            "website": "http://www.sztynort.pl",
+            "places": 200,
+            "description": "A large marina in the Mazury region.",
+            "longitude": 21.7375,
+            "latitude": 54.1167
+        }
+    },
+    {
+        "model": "ChartersDatabase.port",
+        "pk": 2,
+        "fields": {
+            "name": "Port Giżycko",
+            "country": "Poland",
+            "city": "Giżycko",
+            "address": "ul. Nadbrzeżna 15, 11-500 Giżycko",
+            "phone": "987654321",
+            "email": "contact@gizycko.pl",
+            "website": "http://www.gizycko.pl",
+            "places": 150,
+            "description": "A popular marina in Giżycko.",
+            "longitude": 21.7680,
+            "latitude": 54.0380
+        }
+    },
+    {
+        "model": "ChartersDatabase.port",
+        "pk": 3,
+        "fields": {
+            "name": "Port Mikołajki",
+            "country": "Poland",
+            "city": "Mikołajki",
+            "address": "ul. Kajki 1, 11-730 Mikołajki",
+            "phone": "111222333",
+            "email": "info@mikolajki.pl",
+            "website": "http://www.mikolajki.pl",
+            "places": 100,
+            "description": "A scenic marina in Mikołajki.",
+            "longitude": 21.5800,
+            "latitude": 53.8000
+        }
+    },
+    {
+        "model": "ChartersDatabase.port",
+        "pk": 4,
+        "fields": {
+            "name": "Port Ruciane-Nida",
+            "country": "Poland",
+            "city": "Ruciane-Nida",
+            "address": "ul. Portowa 2, 12-220 Ruciane-Nida",
+            "phone": "444555666",
+            "email": "contact@ruciane-nida.pl",
+            "website": "http://www.ruciane-nida.pl",
+            "places": 120,
+            "description": "A quiet marina in Ruciane-Nida.",
+            "longitude": 21.5333,
+            "latitude": 53.6500
+        }
+    },
+    {
+        "model": "ChartersDatabase.port",
+        "pk": 5,
+        "fields": {
+            "name": "Port Węgorzewo",
+            "country": "Poland",
+            "city": "Węgorzewo",
+            "address": "ul. Portowa 3, 11-600 Węgorzewo",
+            "phone": "777888999",
+            "email": "info@wegorzewo.pl",
+            "website": "http://www.wegorzewo.pl",
+            "places": 180,
+            "description": "A bustling marina in Węgorzewo.",
+            "longitude": 21.7500,
+            "latitude": 54.2000
+        }
+    },
+    {
+        "model": "ChartersDatabase.port",
+        "pk": 6,
+        "fields": {
+            "name": "Port Pisz",
+            "country": "Poland",
+            "city": "Pisz",
+            "address": "ul. Portowa 4, 12-200 Pisz",
+            "phone": "222333444",
+            "email": "contact@pisz.pl",
+            "website": "http://www.pisz.pl",
+            "places": 140,
+            "description": "A charming marina in Pisz.",
+            "longitude": 21.8000,
+            "latitude": 53.6333
+        }
+    },
+    {
+        "model": "ChartersDatabase.port",
+        "pk": 7,
+        "fields": {
+            "name": "Port Ryn",
+            "country": "Poland",
+            "city": "Ryn",
+            "address": "ul. Portowa 5, 11-520 Ryn",
+            "phone": "555666777",
+            "email": "info@ryn.pl",
+            "website": "http://www.ryn.pl",
+            "places": 160,
+            "description": "A picturesque marina in Ryn.",
+            "longitude": 21.5500,
+            "latitude": 53.9333
+        }
+    },
+    {
+        "model": "ChartersDatabase.port",
+        "pk": 8,
+        "fields": {
+            "name": "Port Mrągowo",
+            "country": "Poland",
+            "city": "Mrągowo",
+            "address": "ul. Portowa 6, 11-700 Mrągowo",
+            "phone": "888999000",
+            "email": "contact@mragowo.pl",
+            "website": "http://www.mragowo.pl",
+            "places": 130,
+            "description": "A lively marina in Mrągowo.",
+            "longitude": 21.3000,
+            "latitude": 53.8667
+        }
+    },
+    {
+        "model": "ChartersDatabase.port",
+        "pk": 9,
+        "fields": {
+            "name": "Port Ełk",
+            "country": "Poland",
+            "city": "Ełk",
+            "address": "ul. Portowa 7, 19-300 Ełk",
+            "phone": "999000111",
+            "email": "info@elk.pl",
+            "website": "http://www.elk.pl",
+            "places": 110,
+            "description": "A serene marina in Ełk.",
+            "longitude": 22.3500,
+            "latitude": 53.8333
+        }
+    },
+    {
+        "model": "ChartersDatabase.port",
+        "pk": 10,
+        "fields": {
+            "name": "Port Olecko",
+            "country": "Poland",
+            "city": "Olecko",
+            "address": "ul. Portowa 8, 19-400 Olecko",
+            "phone": "000111222",
+            "email": "contact@olecko.pl",
+            "website": "http://www.olecko.pl",
+            "places": 90,
+            "description": "A quaint marina in Olecko.",
+            "longitude": 22.5000,
+            "latitude": 54.0333
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 1,
+        "fields": {
+            "name": "Mazury Cruiser 1",
+            "boatModel": "Cruiser 30",
+            "productionYear": 2018,
+            "length": 30,
+            "width": 10,
+            "draft": 5,
+            "company": "Mazury Boats",
+            "contactEmail": "info@mazuryboats.pl",
+            "contactPhone": "123123123",
+            "motherPort": 1,
+            "beds": 6,
+            "pricePerDay": 500,
+            "description": "A comfortable cruiser for family trips."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 2,
+        "fields": {
+            "name": "Mazury Cruiser 2",
+            "boatModel": "Cruiser 30",
+            "productionYear": 2018,
+            "length": 30,
+            "width": 10,
+            "draft": 5,
+            "company": "Mazury Boats",
+            "contactEmail": "info@mazuryboats.pl",
+            "contactPhone": "123123123",
+            "motherPort": 1,
+            "beds": 6,
+            "pricePerDay": 500,
+            "description": "A comfortable cruiser for family trips."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 3,
+        "fields": {
+            "name": "Mazury Cruiser 3",
+            "boatModel": "Cruiser 30",
+            "productionYear": 2018,
+            "length": 30,
+            "width": 10,
+            "draft": 5,
+            "company": "Mazury Boats",
+            "contactEmail": "info@mazuryboats.pl",
+            "contactPhone": "123123123",
+            "motherPort": 1,
+            "beds": 6,
+            "pricePerDay": 500,
+            "description": "A comfortable cruiser for family trips."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 4,
+        "fields": {
+            "name": "Mazury Cruiser 4",
+            "boatModel": "Cruiser 30",
+            "productionYear": 2018,
+            "length": 30,
+            "width": 10,
+            "draft": 5,
+            "company": "Mazury Boats",
+            "contactEmail": "info@mazuryboats.pl",
+            "contactPhone": "123123123",
+            "motherPort": 1,
+            "beds": 6,
+            "pricePerDay": 500,
+            "description": "A comfortable cruiser for family trips."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 5,
+        "fields": {
+            "name": "Mazury Cruiser 5",
+            "boatModel": "Cruiser 30",
+            "productionYear": 2018,
+            "length": 30,
+            "width": 10,
+            "draft": 5,
+            "company": "Mazury Boats",
+            "contactEmail": "info@mazuryboats.pl",
+            "contactPhone": "123123123",
+            "motherPort": 1,
+            "beds": 6,
+            "pricePerDay": 500,
+            "description": "A comfortable cruiser for family trips."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 6,
+        "fields": {
+            "name": "Mazury Cruiser 6",
+            "boatModel": "Cruiser 30",
+            "productionYear": 2018,
+            "length": 30,
+            "width": 10,
+            "draft": 5,
+            "company": "Mazury Boats",
+            "contactEmail": "info@mazuryboats.pl",
+            "contactPhone": "123123123",
+            "motherPort": 1,
+            "beds": 6,
+            "pricePerDay": 500,
+            "description": "A comfortable cruiser for family trips."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 7,
+        "fields": {
+            "name": "Mazury Cruiser 7",
+            "boatModel": "Cruiser 30",
+            "productionYear": 2018,
+            "length": 30,
+            "width": 10,
+            "draft": 5,
+            "company": "Mazury Boats",
+            "contactEmail": "info@mazuryboats.pl",
+            "contactPhone": "123123123",
+            "motherPort": 1,
+            "beds": 6,
+            "pricePerDay": 500,
+            "description": "A comfortable cruiser for family trips."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 8,
+        "fields": {
+            "name": "Mazury Cruiser 8",
+            "boatModel": "Cruiser 30",
+            "productionYear": 2018,
+            "length": 30,
+            "width": 10,
+            "draft": 5,
+            "company": "Mazury Boats",
+            "contactEmail": "info@mazuryboats.pl",
+            "contactPhone": "123123123",
+            "motherPort": 1,
+            "beds": 6,
+            "pricePerDay": 500,
+            "description": "A comfortable cruiser for family trips."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 9,
+        "fields": {
+            "name": "Mazury Cruiser 9",
+            "boatModel": "Cruiser 30",
+            "productionYear": 2018,
+            "length": 30,
+            "width": 10,
+            "draft": 5,
+            "company": "Mazury Boats",
+            "contactEmail": "info@mazuryboats.pl",
+            "contactPhone": "123123123",
+            "motherPort": 1,
+            "beds": 6,
+            "pricePerDay": 500,
+            "description": "A comfortable cruiser for family trips."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 10,
+        "fields": {
+            "name": "Mazury Cruiser 10",
+            "boatModel": "Cruiser 30",
+            "productionYear": 2018,
+            "length": 30,
+            "width": 10,
+            "draft": 5,
+            "company": "Mazury Boats",
+            "contactEmail": "info@mazuryboats.pl",
+            "contactPhone": "123123123",
+            "motherPort": 1,
+            "beds": 6,
+            "pricePerDay": 500,
+            "description": "A comfortable cruiser for family trips."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 11,
+        "fields": {
+            "name": "Giżycko Sailor 1",
+            "boatModel": "Sailor 25",
+            "productionYear": 2020,
+            "length": 25,
+            "width": 8,
+            "draft": 4,
+            "company": "Giżycko Yachts",
+            "contactEmail": "contact@gizyckoyachts.pl",
+            "contactPhone": "321321321",
+            "motherPort": 2,
+            "beds": 4,
+            "pricePerDay": 400,
+            "description": "A small sailboat perfect for couples."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 12,
+        "fields": {
+            "name": "Giżycko Sailor 2",
+            "boatModel": "Sailor 25",
+            "productionYear": 2020,
+            "length": 25,
+            "width": 8,
+            "draft": 4,
+            "company": "Giżycko Yachts",
+            "contactEmail": "contact@gizyckoyachts.pl",
+            "contactPhone": "321321321",
+            "motherPort": 2,
+            "beds": 4,
+            "pricePerDay": 400,
+            "description": "A small sailboat perfect for couples."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 13,
+        "fields": {
+            "name": "Giżycko Sailor 3",
+            "boatModel": "Sailor 25",
+            "productionYear": 2020,
+            "length": 25,
+            "width": 8,
+            "draft": 4,
+            "company": "Giżycko Yachts",
+            "contactEmail": "contact@gizyckoyachts.pl",
+            "contactPhone": "321321321",
+            "motherPort": 2,
+            "beds": 4,
+            "pricePerDay": 400,
+            "description": "A small sailboat perfect for couples."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 14,
+        "fields": {
+            "name": "Giżycko Sailor 4",
+            "boatModel": "Sailor 25",
+            "productionYear": 2020,
+            "length": 25,
+            "width": 8,
+            "draft": 4,
+            "company": "Giżycko Yachts",
+            "contactEmail": "contact@gizyckoyachts.pl",
+            "contactPhone": "321321321",
+            "motherPort": 2,
+            "beds": 4,
+            "pricePerDay": 400,
+            "description": "A small sailboat perfect for couples."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 15,
+        "fields": {
+            "name": "Giżycko Sailor 5",
+            "boatModel": "Sailor 25",
+            "productionYear": 2020,
+            "length": 25,
+            "width": 8,
+            "draft": 4,
+            "company": "Giżycko Yachts",
+            "contactEmail": "contact@gizyckoyachts.pl",
+            "contactPhone": "321321321",
+            "motherPort": 2,
+            "beds": 4,
+            "pricePerDay": 400,
+            "description": "A small sailboat perfect for couples."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 16,
+        "fields": {
+            "name": "Giżycko Sailor 6",
+            "boatModel": "Sailor 25",
+            "productionYear": 2020,
+            "length": 25,
+            "width": 8,
+            "draft": 4,
+            "company": "Giżycko Yachts",
+            "contactEmail": "contact@gizyckoyachts.pl",
+            "contactPhone": "321321321",
+            "motherPort": 2,
+            "beds": 4,
+            "pricePerDay": 400,
+            "description": "A small sailboat perfect for couples."
+        }
+    },
+    {
+        "model": "ChartersDatabase.boat",
+        "pk": 17,
+        "fields": {
+            "name": "Giżycko Sailor 7",
+            "boatModel": "Sailor 25",
+            "productionYear": 2020,
+            "length": 25,
+            "width": 8,
+            "draft": 4,
+            "company": "Giżycko Yachts",
+            "contactEmail": "contact@gizyckoyachts.pl",
+            "contactPhone": "321321321",
+            "motherPort": 2,
+            "beds": 4,
+            "pricePerDay": 400,
+            "description": "A small sailboat perfect for couples."
+        }
+    },
+    {
+      "model": "ChartersDatabase.boat",
+      "pk": 18,
+      "fields": {
+          "name": "Giżycko Sailor 8",
+          "boatModel": "Sailor 25",
+          "productionYear": 2020,
+        "length": 25,
+        "width": 8,
+        "draft": 4,
+        "company": "Giżycko Yachts",
+        "contactEmail": "contact@gizyckoyachts.pl",
+        "contactPhone": "321321321",
+        "motherPort": 2,
+        "beds": 4,
+        "pricePerDay": 400,
+        "description": "A small sailboat perfect for couples."
+    }
+  },
+  {
+    "model": "ChartersDatabase.boat",
+    "pk": 19,
+    "fields": {
+        "name": "Giżycko Sailor 9",
+        "boatModel": "Sailor 25",
+        "productionYear": 2020,
+        "length": 25,
+        "width": 8,
+        "draft": 4,
+        "company": "Giżycko Yachts",
+        "contactEmail": "contact@gizyckoyachts.pl",
+        "contactPhone": "321321321",
+        "motherPort": 2,
+        "beds": 4,
+        "pricePerDay": 400,
+        "description": "A small sailboat perfect for couples."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 20,
+    "fields": {
+        "name": "Giżycko Sailor 10",
+        "boatModel": "Sailor 25",
+        "productionYear": 2020,
+        "length": 25,
+        "width": 8,
+        "draft": 4,
+        "company": "Giżycko Yachts",
+        "contactEmail": "contact@gizyckoyachts.pl",
+        "contactPhone": "321321321",
+        "motherPort": 2,
+        "beds": 4,
+        "pricePerDay": 400,
+        "description": "A small sailboat perfect for couples."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 21,
+    "fields": {
+        "name": "Mazury Cruiser 11",
+        "boatModel": "Cruiser 30",
+        "productionYear": 2018,
+        "length": 30,
+        "width": 10,
+        "draft": 5,
+        "company": "Mazury Boats",
+        "contactEmail": "info@mazuryboats.pl",
+        "contactPhone": "123123123",
+        "motherPort": 1,
+        "beds": 6,
+        "pricePerDay": 500,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 22,
+    "fields": {
+        "name": "Mazury Cruiser 12",
+        "boatModel": "Cruiser 30",
+        "productionYear": 2018,
+        "length": 30,
+        "width": 10,
+        "draft": 5,
+        "company": "Mazury Boats",
+        "contactEmail": "info@mazuryboats.pl",
+        "contactPhone": "123123123",
+        "motherPort": 1,
+        "beds": 6,
+        "pricePerDay": 500,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 23,
+    "fields": {
+        "name": "Mazury Cruiser 13",
+        "boatModel": "Cruiser 30",
+        "productionYear": 2018,
+        "length": 30,
+        "width": 10,
+        "draft": 5,
+        "company": "Mazury Boats",
+        "contactEmail": "info@mazuryboats.pl",
+        "contactPhone": "123123123",
+        "motherPort": 1,
+        "beds": 6,
+        "pricePerDay": 500,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 24,
+    "fields": {
+        "name": "Mazury Cruiser 14",
+        "boatModel": "Cruiser 30",
+        "productionYear": 2018,
+        "length": 30,
+        "width": 10,
+        "draft": 5,
+        "company": "Mazury Boats",
+        "contactEmail": "info@mazuryboats.pl",
+        "contactPhone": "123123123",
+        "motherPort": 1,
+        "beds": 6,
+        "pricePerDay": 500,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 25,
+    "fields": {
+        "name": "Mazury Cruiser 15",
+        "boatModel": "Cruiser 30",
+        "productionYear": 2018,
+        "length": 30,
+        "width": 10,
+        "draft": 5,
+        "company": "Mazury Boats",
+        "contactEmail": "info@mazuryboats.pl",
+        "contactPhone": "123123123",
+        "motherPort": 1,
+        "beds": 6,
+        "pricePerDay": 500,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 26,
+    "fields": {
+        "name": "Mazury Cruiser 16",
+        "boatModel": "Cruiser 30",
+        "productionYear": 2018,
+        "length": 30,
+        "width": 10,
+        "draft": 5,
+        "company": "Mazury Boats",
+        "contactEmail": "info@mazuryboats.pl",
+        "contactPhone": "123123123",
+        "motherPort": 1,
+        "beds": 6,
+        "pricePerDay": 500,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 27,
+    "fields": {
+        "name": "Mazury Cruiser 17",
+        "boatModel": "Cruiser 30",
+        "productionYear": 2018,
+        "length": 30,
+        "width": 10,
+        "draft": 5,
+        "company": "Mazury Boats",
+        "contactEmail": "info@mazuryboats.pl",
+        "contactPhone": "123123123",
+        "motherPort": 1,
+        "beds": 6,
+        "pricePerDay": 500,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 28,
+    "fields": {
+        "name": "Mazury Cruiser 18",
+        "boatModel": "Cruiser 30",
+        "productionYear": 2018,
+        "length": 30,
+        "width": 10,
+        "draft": 5,
+        "company": "Mazury Boats",
+        "contactEmail": "info@mazuryboats.pl",
+        "contactPhone": "123123123",
+        "motherPort": 1,
+        "beds": 6,
+        "pricePerDay": 500,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 29,
+    "fields": {
+        "name": "Mazury Cruiser 19",
+        "boatModel": "Cruiser 30",
+        "productionYear": 2018,
+        "length": 30,
+        "width": 10,
+        "draft": 5,
+        "company": "Mazury Boats",
+        "contactEmail": "info@mazuryboats.pl",
+        "contactPhone": "123123123",
+        "motherPort": 1,
+        "beds": 6,
+        "pricePerDay": 500,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 30,
+    "fields": {
+        "name": "Mazury Cruiser 20",
+        "boatModel": "Cruiser 30",
+        "productionYear": 2018,
+        "length": 30,
+        "width": 10,
+        "draft": 5,
+        "company": "Mazury Boats",
+        "contactEmail": "info@mazuryboats.pl",
+        "contactPhone": "123123123",
+        "motherPort": 1,
+        "beds": 6,
+        "pricePerDay": 500,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+  {
+    "model": "ChartersDatabase.boat",
+    "pk": 31,
+    "fields": {
+        "name": "Mikołajki Sailor 1",
+        "boatModel": "Sailor 25",
+        "productionYear": 2021,
+        "length": 25,
+        "width": 8,
+        "draft": 4,
+        "company": "Mikołajki Yachts",
+        "contactEmail": "contact@mikolajkiyachts.pl",
+        "contactPhone": "111111111",
+        "motherPort": 3,
+        "beds": 4,
+        "pricePerDay": 450,
+        "description": "A small sailboat perfect for couples."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 32,
+    "fields": {
+        "name": "Mikołajki Sailor 2",
+        "boatModel": "Sailor 25",
+        "productionYear": 2021,
+        "length": 25,
+        "width": 8,
+        "draft": 4,
+        "company": "Mikołajki Yachts",
+        "contactEmail": "contact@mikolajkiyachts.pl",
+        "contactPhone": "111111111",
+        "motherPort": 3,
+        "beds": 4,
+        "pricePerDay": 450,
+        "description": "A small sailboat perfect for couples."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 33,
+    "fields": {
+        "name": "Ruciane-Nida Cruiser 1",
+        "boatModel": "Cruiser 35",
+        "productionYear": 2019,
+        "length": 35,
+        "width": 12,
+        "draft": 6,
+        "company": "Ruciane-Nida Boats",
+        "contactEmail": "info@ruciane-nidaboats.pl",
+        "contactPhone": "222222222",
+        "motherPort": 4,
+        "beds": 8,
+        "pricePerDay": 600,
+        "description": "A spacious cruiser for large groups."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 34,
+    "fields": {
+        "name": "Ruciane-Nida Cruiser 2",
+        "boatModel": "Cruiser 35",
+        "productionYear": 2019,
+        "length": 35,
+        "width": 12,
+        "draft": 6,
+        "company": "Ruciane-Nida Boats",
+        "contactEmail": "info@ruciane-nidaboats.pl",
+        "contactPhone": "222222222",
+        "motherPort": 4,
+        "beds": 8,
+        "pricePerDay": 600,
+        "description": "A spacious cruiser for large groups."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 35,
+    "fields": {
+        "name": "Węgorzewo Sailor 1",
+        "boatModel": "Sailor 28",
+        "productionYear": 2022,
+        "length": 28,
+        "width": 9,
+        "draft": 5,
+        "company": "Węgorzewo Yachts",
+        "contactEmail": "contact@wegorzewoyachts.pl",
+        "contactPhone": "333333333",
+        "motherPort": 5,
+        "beds": 5,
+        "pricePerDay": 500,
+        "description": "A modern sailboat for small families."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 36,
+    "fields": {
+        "name": "Węgorzewo Sailor 2",
+        "boatModel": "Sailor 28",
+        "productionYear": 2022,
+        "length": 28,
+        "width": 9,
+        "draft": 5,
+        "company": "Węgorzewo Yachts",
+        "contactEmail": "contact@wegorzewoyachts.pl",
+        "contactPhone": "333333333",
+        "motherPort": 5,
+        "beds": 5,
+        "pricePerDay": 500,
+        "description": "A modern sailboat for small families."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 37,
+    "fields": {
+        "name": "Pisz Cruiser 1",
+        "boatModel": "Cruiser 32",
+        "productionYear": 2020,
+        "length": 32,
+        "width": 11,
+        "draft": 5,
+        "company": "Pisz Boats",
+        "contactEmail": "info@piszboats.pl",
+        "contactPhone": "444444444",
+        "motherPort": 6,
+        "beds": 7,
+        "pricePerDay": 550,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 38,
+    "fields": {
+        "name": "Pisz Cruiser 2",
+        "boatModel": "Cruiser 32",
+        "productionYear": 2020,
+        "length": 32,
+        "width": 11,
+        "draft": 5,
+        "company": "Pisz Boats",
+        "contactEmail": "info@piszboats.pl",
+        "contactPhone": "444444444",
+        "motherPort": 6,
+        "beds": 7,
+        "pricePerDay": 550,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 39,
+    "fields": {
+        "name": "Ryn Sailor 1",
+        "boatModel": "Sailor 27",
+        "productionYear": 2021,
+        "length": 27,
+        "width": 9,
+        "draft": 4,
+        "company": "Ryn Yachts",
+        "contactEmail": "contact@rynyachts.pl",
+        "contactPhone": "555555555",
+        "motherPort": 7,
+        "beds": 5,
+        "pricePerDay": 480,
+        "description": "A small sailboat perfect for couples."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 40,
+    "fields": {
+        "name": "Ryn Sailor 2",
+        "boatModel": "Sailor 27",
+        "productionYear": 2021,
+        "length": 27,
+        "width": 9,
+        "draft": 4,
+        "company": "Ryn Yachts",
+        "contactEmail": "contact@rynyachts.pl",
+        "contactPhone": "555555555",
+        "motherPort": 7,
+        "beds": 5,
+        "pricePerDay": 480,
+        "description": "A small sailboat perfect for couples."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 41,
+    "fields": {
+        "name": "Mrągowo Cruiser 1",
+        "boatModel": "Cruiser 33",
+        "productionYear": 2019,
+        "length": 33,
+        "width": 11,
+        "draft": 5,
+        "company": "Mrągowo Boats",
+        "contactEmail": "info@mragowoboats.pl",
+        "contactPhone": "666666666",
+        "motherPort": 8,
+        "beds": 7,
+        "pricePerDay": 570,
+        "description": "A spacious cruiser for large groups."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 42,
+    "fields": {
+        "name": "Mrągowo Cruiser 2",
+        "boatModel": "Cruiser 33",
+        "productionYear": 2019,
+        "length": 33,
+        "width": 11,
+        "draft": 5,
+        "company": "Mrągowo Boats",
+        "contactEmail": "info@mragowoboats.pl",
+        "contactPhone": "666666666",
+        "motherPort": 8,
+        "beds": 7,
+        "pricePerDay": 570,
+        "description": "A spacious cruiser for large groups."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 43,
+    "fields": {
+        "name": "Ełk Sailor 1",
+        "boatModel": "Sailor 26",
+        "productionYear": 2022,
+        "length": 26,
+        "width": 8,
+        "draft": 4,
+        "company": "Ełk Yachts",
+        "contactEmail": "contact@elkyachts.pl",
+        "contactPhone": "777777777",
+        "motherPort": 9,
+        "beds": 4,
+        "pricePerDay": 460,
+        "description": "A modern sailboat for small families."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 44,
+    "fields": {
+        "name": "Ełk Sailor 2",
+        "boatModel": "Sailor 26",
+        "productionYear": 2022,
+        "length": 26,
+        "width": 8,
+        "draft": 4,
+        "company": "Ełk Yachts",
+        "contactEmail": "contact@elkyachts.pl",
+        "contactPhone": "777777777",
+        "motherPort": 9,
+        "beds": 4,
+        "pricePerDay": 460,
+        "description": "A modern sailboat for small families."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 45,
+    "fields": {
+        "name": "Olecko Cruiser 1",
+        "boatModel": "Cruiser 34",
+        "productionYear": 2020,
+        "length": 34,
+        "width": 12,
+        "draft": 6,
+        "company": "Olecko Boats",
+        "contactEmail": "info@oleckoboats.pl",
+        "contactPhone": "888888888",
+        "motherPort": 10,
+        "beds": 8,
+        "pricePerDay": 590,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 46,
+    "fields": {
+        "name": "Olecko Cruiser 2",
+        "boatModel": "Cruiser 34",
+        "productionYear": 2020,
+        "length": 34,
+        "width": 12,
+        "draft": 6,
+        "company": "Olecko Boats",
+        "contactEmail": "info@oleckoboats.pl",
+        "contactPhone": "888888888",
+        "motherPort": 10,
+        "beds": 8,
+        "pricePerDay": 590,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 47,
+    "fields": {
+        "name": "Olecko Cruiser 3",
+        "boatModel": "Cruiser 34",
+        "productionYear": 2020,
+        "length": 34,
+        "width": 12,
+        "draft": 6,
+        "company": "Olecko Boats",
+        "contactEmail": "info@oleckoboats.pl",
+        "contactPhone": "888888888",
+        "motherPort": 10,
+        "beds": 8,
+        "pricePerDay": 590,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 48,
+    "fields": {
+        "name": "Olecko Cruiser 4",
+        "boatModel": "Cruiser 34",
+        "productionYear": 2020,
+        "length": 34,
+        "width": 12,
+        "draft": 6,
+        "company": "Olecko Boats",
+        "contactEmail": "info@oleckoboats.pl",
+        "contactPhone": "888888888",
+        "motherPort": 10,
+        "beds": 8,
+        "pricePerDay": 590,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 49,
+    "fields": {
+        "name": "Olecko Cruiser 5",
+        "boatModel": "Cruiser 34",
+        "productionYear": 2020,
+        "length": 34,
+        "width": 12,
+        "draft": 6,
+        "company": "Olecko Boats",
+        "contactEmail": "info@oleckoboats.pl",
+        "contactPhone": "888888888",
+        "motherPort": 10,
+        "beds": 8,
+        "pricePerDay": 590,
+        "description": "A comfortable cruiser for family trips."
+    }
+},
+{
+    "model": "ChartersDatabase.boat",
+    "pk": 50,
+    "fields": {
+        "name": "Olecko Cruiser 6",
+        "boatModel": "Cruiser 34",
+        "productionYear": 2020,
+        "length": 34,
+        "width": 12,
+        "draft": 6,
+        "company": "Olecko Boats",
+        "contactEmail": "info@oleckoboats.pl",
+        "contactPhone": "888888888",
+        "motherPort": 10,
+        "beds": 8,
+        "pricePerDay": 590,
+        "description": "A comfortable cruiser for family trips."
+    }
+}
+]

@@ -24,6 +24,8 @@ class Boat(models.Model):
     width = models.IntegerField(null=True, blank=True)
     draft = models.IntegerField()
     company = models.CharField(max_length=100)
+    contactEmail = models.EmailField(null=True, blank=True)
+    contactPhone = models.CharField(max_length=16, null=True, blank=True)
     motherPort = models.ForeignKey(Port, on_delete=models.PROTECT, null=True, blank=True)
     beds = models.IntegerField()
     pricePerDay = models.IntegerField()
@@ -36,3 +38,8 @@ class Charter(models.Model):
     endDate = models.DateField()
     price = models.IntegerField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+
+class Photo(models.Model):
+    photo = models.ImageField(upload_to='photos/')
+    boat = models.ForeignKey(Boat, on_delete=models.CASCADE)
