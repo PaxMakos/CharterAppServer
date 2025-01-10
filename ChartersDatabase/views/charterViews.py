@@ -34,11 +34,6 @@ def addCharter(request):
         price = request.POST.get("price")
         user = request.user
 
-        existingCharters = Charter.objects.filter(boat__name=boatName)
-        for charter in existingCharters:
-            if charter.startDate <= startDate <= charter.endDate or charter.startDate <= endDate <= charter.endDate:
-                return JsonResponse({"status": "error", "message": "This boat is already chartered in this period"}, safe=False)
-
         Charter.objects.create(
             boat=Boat.objects.get(name=boatName),
             startDate=startDate,

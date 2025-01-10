@@ -22,6 +22,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+#Se musicie wygenerować klucz:
+#openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
+#i odpalać serwer z:
+#python manage.py runserver_plus --cert-file cert.pem --key-file key.pem
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-q*&v&l=&e)g$=7sd+3x0f5$#xm5$-%%_^t0+%v^(zo*7x3#5oc'
@@ -33,6 +37,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+
 INSTALLED_APPS = [
     'ChartersDatabase.apps.ChartersDatabaseConfig',
     'django.contrib.admin',
