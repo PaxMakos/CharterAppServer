@@ -1,7 +1,12 @@
+from django.contrib.auth.models import User
 from django.test import TestCase
 import requests
 from PIL import Image
 from io import BytesIO
+import datetime
+from django.urls import reverse
+
+from ChartersDatabase.models import Boat, Port
 
 
 # Create your tests here.
@@ -29,3 +34,28 @@ def show_photos(boat_name):
 
 
 #show_photos('Mazury Cruiser 3')
+
+class CharterOverlapTest(TestCase):
+    def setUp(self):
+        self.user = User.objects.create_user(username='testuser', password='12345')
+        self.port = Port.objects.create(
+            name='Test Port',
+            country='Test Country',
+            city='Test City',
+            address='Test Address',
+            phone='123456789',
+
+        )
+        self.boat = Boat.objects.create(
+            name='Test Boat',
+            boatModel='Cruiser 34',
+            productionYear=2020,
+            length=34,
+            width=12,
+            draft=6,
+            company='Test Company',
+            motherPort=self.port,
+            beds=8,
+            pricePerDay=590,
+            description='A comfortable cruiser for family trips.'
+        )
