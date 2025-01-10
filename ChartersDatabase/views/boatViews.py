@@ -51,13 +51,3 @@ def getBoat(request):
         return JsonResponse({"status": "success", "boat": toReturn}, safe=False)
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, safe=False)
-
-@require_http_methods(["GET"])
-@csrf_exempt
-def getAllBoats(request):
-    try:
-        boats = Boat.objects.all()
-        boatsNames = [boat.name for boat in boats]
-        return JsonResponse({"status": "success", "boats": boatsNames}, safe=False)
-    except Exception as e:
-        return JsonResponse({"status": "error", "message": str(e)}, safe=False)
