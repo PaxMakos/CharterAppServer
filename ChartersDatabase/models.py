@@ -59,3 +59,19 @@ class Charter(models.Model):
 class Photo(models.Model):
     photo = models.ImageField(upload_to='photos/')
     boat = models.ForeignKey(Boat, on_delete=models.CASCADE)
+
+
+class Chat(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    boat = models.ForeignKey(Boat, on_delete=models.CASCADE)
+
+SENDER = (
+    ('User', 'User'),
+    ('Boat', 'Boat')
+)
+
+class Message(models.Model):
+    chat = models.ForeignKey(Chat, on_delete=models.CASCADE)
+    sender = models.CharField(choices=SENDER, max_length=4)
+    message = models.TextField()
+    date = models.DateTimeField(auto_now_add=True)
