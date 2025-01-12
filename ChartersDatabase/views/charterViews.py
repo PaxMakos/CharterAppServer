@@ -7,7 +7,7 @@ import datetime
 
 @require_http_methods(["GET"])
 @csrf_exempt
-def getCharters(request):
+def getChartersByBoat(request):
     try:
         boatName = request.GET.get("boatName")
         charters = Charter.objects.filter(boat__name=boatName)
@@ -18,6 +18,28 @@ def getCharters(request):
                 "id": charter.id,
                 "startDate": charter.startDate,
                 "endDate": charter.endDate,
+            })
+
+        return JsonResponse({"status": "success", "charters": chartersList}, safe=False)
+    except Exception as e:
+        return JsonResponse({"status": "error", "message": str(e)}, safe=False)
+
+
+@require_http_methods(["GET"])
+@csrf_exempt
+def getChartersByUser(request):
+    try:
+        user = request.user
+        charters = Charter.objects.filter(user=user)
+
+        chartersList = []
+        for charter in charters:
+            chartersList.append({
+                "id": charter.id,
+                "boat": charter.boat.name,
+                "startDate": charter.startDate,
+                "endDate": charter.endDate,
+                "price": charter.price,
             })
 
         return JsonResponse({"status": "success", "charters": chartersList}, safe=False)
