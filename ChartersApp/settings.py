@@ -15,13 +15,16 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+# Se musicie wygenerować klucz:
+# openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
+# i odpalać serwer z:
+# python manage.py runserver_plus --cert-file cert.pem --key-file key.pem
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-q*&v&l=&e)g$=7sd+3x0f5$#xm5$-%%_^t0+%v^(zo*7x3#5oc'
@@ -29,10 +32,10 @@ SECRET_KEY = 'django-insecure-q*&v&l=&e)g$=7sd+3x0f5$#xm5$-%%_^t0+%v^(zo*7x3#5oc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["10.0.2.2", "127.0.0.1"]
 
 # Application definition
+
 INSTALLED_APPS = [
     'ChartersDatabase.apps.ChartersDatabaseConfig',
     'django.contrib.admin',
@@ -75,7 +78,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ChartersApp.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
@@ -85,7 +87,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -105,7 +106,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
@@ -116,7 +116,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
