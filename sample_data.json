@@ -1118,5 +1118,226 @@
         "pricePerDay": 590,
         "description": "A comfortable cruiser for family trips."
     }
-}
+},
+
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 1,
+        "fields": {
+            "boat": 31,
+            "user": 1,
+            "startDate": "2023-06-01",
+            "endDate": "2023-06-07",
+            "price": 3150
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 2,
+        "fields": {
+            "boat": 32,
+            "user": 1,
+            "startDate": "2023-07-01",
+            "endDate": "2023-07-07",
+            "price": 3150
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 3,
+        "fields": {
+            "boat": 33,
+            "user": 2,
+            "startDate": "2023-08-01",
+            "endDate": "2023-08-10",
+            "price": 5400
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 4,
+        "fields": {
+            "boat": 34,
+            "user": 2,
+            "startDate": "2023-09-01",
+            "endDate": "2023-09-10",
+            "price": 5400
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 5,
+        "fields": {
+            "boat": 35,
+            "user": 3,
+            "startDate": "2023-10-01",
+            "endDate": "2023-10-07",
+            "price": 3500
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 6,
+        "fields": {
+            "boat": 36,
+            "user": 3,
+            "startDate": "2023-11-01",
+            "endDate": "2023-11-07",
+            "price": 3500
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 7,
+        "fields": {
+            "boat": 37,
+            "user": 1,
+            "startDate": "2023-12-01",
+            "endDate": "2023-12-07",
+            "price": 3850
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 8,
+        "fields": {
+            "boat": 38,
+            "user": 1,
+            "startDate": "2024-01-01",
+            "endDate": "2024-01-07",
+            "price": 3850
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 9,
+        "fields": {
+            "boat": 39,
+            "user": 2,
+            "startDate": "2024-02-01",
+            "endDate": "2024-02-07",
+            "price": 3360
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 10,
+        "fields": {
+            "boat": 40,
+            "user": 2,
+            "startDate": "2024-03-01",
+            "endDate": "2024-03-07",
+            "price": 3360
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 11,
+        "fields": {
+            "boat": 41,
+            "user": 3,
+            "startDate": "2024-04-01",
+            "endDate": "2024-04-07",
+            "price": 3990
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 12,
+        "fields": {
+            "boat": 42,
+            "user": 3,
+            "startDate": "2024-05-01",
+            "endDate": "2024-05-07",
+            "price": 3990
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 13,
+        "fields": {
+            "boat": 43,
+            "user": 1,
+            "startDate": "2024-06-01",
+            "endDate": "2024-06-07",
+            "price": 3220
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 14,
+        "fields": {
+            "boat": 44,
+            "user": 1,
+            "startDate": "2024-07-01",
+            "endDate": "2024-07-07",
+            "price": 3220
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 15,
+        "fields": {
+            "boat": 45,
+            "user": 2,
+            "startDate": "2024-08-01",
+            "endDate": "2024-08-10",
+            "price": 5310
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 16,
+        "fields": {
+            "boat": 46,
+            "user": 2,
+            "startDate": "2024-09-01",
+            "endDate": "2024-09-10",
+            "price": 5310
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 17,
+        "fields": {
+            "boat": 47,
+            "user": 3,
+            "startDate": "2024-10-01",
+            "endDate": "2024-10-07",
+            "price": 4130
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 18,
+        "fields": {
+            "boat": 48,
+            "user": 3,
+            "startDate": "2024-11-01",
+            "endDate": "2024-11-07",
+            "price": 4130
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 19,
+        "fields": {
+            "boat": 49,
+            "user": 1,
+            "startDate": "2024-12-01",
+            "endDate": "2024-12-07",
+            "price": 4130
+        }
+    },
+    {
+        "model": "ChartersDatabase.charter",
+        "pk": 20,
+        "fields": {
+            "boat": 50,
+            "user": 1,
+            "startDate": "2025-01-01",
+            "endDate": "2025-01-07",
+            "price": 4130
+        }
+    }
 ]
