@@ -51,3 +51,45 @@ def register(request):
         return JsonResponse({'status': 'error', 'message': 'Invalid username or password'})
     except:
         return JsonResponse({'status': 'error', 'message': 'Registration failed'})
+
+
+@require_http_methods(["GET"])
+@csrf_exempt
+def getUser(request):
+    try:
+        user = request.user
+        return JsonResponse({'status': 'success', 'username': user.username, 'email': user.email})
+    except:
+        return JsonResponse({'status': 'error', 'message': 'User not found'})
+
+
+@require_http_methods(["POST"])
+@csrf_exempt
+def changePassword(request):
+    try:
+        oldPassword = request.POST['oldPassword']
+        newPassword = request.POST['newPassword']
+    except KeyError:
+        return JsonResponse({'status': 'error', 'message': 'Missing old or new password'})
+
+    user = request.user
+    if user.check_password(oldPassword):
+        user.set_password(newPassword)
+        user.save()
+        return JsonResponse({'status': 'success'})
+    else:
+        return JsonResponse({'status': 'error', 'message': 'Invalid old password'})
+
+
+@require_http_methods(["POST"])
+@csrf_exempt
+def changeEmail(request):
+    try:
+        newEmail = request.POST['newEmail']
+    except KeyError:
+        return JsonResponse({'status': 'error', 'message': 'Missing new email'})
+
+    user = request.user
+    user.email = newEmail
+    user.save()
+    return JsonResponse({'status': 'success'})
