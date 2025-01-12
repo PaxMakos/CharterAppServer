@@ -15,7 +15,6 @@ def getChartersByBoat(request):
         chartersList = []
         for charter in charters:
             chartersList.append({
-                "id": charter.id,
                 "startDate": charter.startDate,
                 "endDate": charter.endDate,
             })
@@ -35,7 +34,6 @@ def getChartersByUser(request):
         chartersList = []
         for charter in charters:
             chartersList.append({
-                "id": charter.id,
                 "boat": charter.boat.name,
                 "startDate": charter.startDate,
                 "endDate": charter.endDate,

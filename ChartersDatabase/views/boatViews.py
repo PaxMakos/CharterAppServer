@@ -10,8 +10,25 @@ def getBoatsByPort(request):
     try:
         portName = request.GET.get("portName")
         boats = Boat.objects.filter(motherPort__name=portName)
-        boatsNames = [boat.name for boat in boats]
-        return JsonResponse({"status": "success", "boats": boatsNames}, safe=False)
+        boatsList = []
+        for boat in boats:
+            boatsList.append({
+                "name": boat.name,
+                "boatModel": boat.boatModel,
+                "productionYear": boat.productionYear,
+                "length": boat.length,
+                "width": boat.width,
+                "draft": boat.draft,
+                "company": boat.company,
+                "contactEmail": boat.contactEmail,
+                "contactPhone": boat.contactPhone,
+                "motherPort": boat.motherPort.name,
+                "beds": boat.beds,
+                "pricePerDay": boat.pricePerDay,
+                "description": boat.description
+            })
+
+        return JsonResponse({"status": "success", "boats": boatsList}, safe=False)
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, safe=False)
 
@@ -22,8 +39,25 @@ def getBoatsByCompany(request):
     try:
         companyName = request.GET.get("companyName")
         boats = Boat.objects.filter(company=companyName)
-        boatsNames = [boat.name for boat in boats]
-        return JsonResponse({"status": "success", "boats": boatsNames}, safe=False)
+        boatsList = []
+        for boat in boats:
+            boatsList.append({
+                "name": boat.name,
+                "boatModel": boat.boatModel,
+                "productionYear": boat.productionYear,
+                "length": boat.length,
+                "width": boat.width,
+                "draft": boat.draft,
+                "company": boat.company,
+                "contactEmail": boat.contactEmail,
+                "contactPhone": boat.contactPhone,
+                "motherPort": boat.motherPort.name,
+                "beds": boat.beds,
+                "pricePerDay": boat.pricePerDay,
+                "description": boat.description
+            })
+
+        return JsonResponse({"status": "success", "boats": boatsList}, safe=False)
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, safe=False)
 
@@ -60,7 +94,25 @@ def getBoat(request):
 def getAllBoats(request):
     try:
         boats = Boat.objects.all()
-        boatsNames = [boat.name for boat in boats]
-        return JsonResponse({"status": "success", "boats": boatsNames}, safe=False)
+
+        boatsList = []
+        for boat in boats:
+            boatsList.append({
+                "name": boat.name,
+                "boatModel": boat.boatModel,
+                "productionYear": boat.productionYear,
+                "length": boat.length,
+                "width": boat.width,
+                "draft": boat.draft,
+                "company": boat.company,
+                "contactEmail": boat.contactEmail,
+                "contactPhone": boat.contactPhone,
+                "motherPort": boat.motherPort.name,
+                "beds": boat.beds,
+                "pricePerDay": boat.pricePerDay,
+                "description": boat.description
+            })
+
+        return JsonResponse({"status": "success", "boats": boatsList}, safe=False)
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, safe=False)
