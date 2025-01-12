@@ -60,31 +60,6 @@ def getBoat(request):
 def getAllBoats(request):
     try:
         boats = Boat.objects.all()
-        boatsData = [
-            {
-                "name": boat.name,
-                "boatModel": boat.boatModel,
-                "productionYear": boat.productionYear,
-                "length": boat.length,
-                "width": boat.width,
-                "draft": boat.draft,
-                "company": boat.company,
-                "motherPort": boat.motherPort.name if boat.motherPort else None,
-                "beds": boat.beds,
-                "pricePerDay": boat.pricePerDay,
-                "description": boat.description,
-            }
-            for boat in boats
-        ]
-        return JsonResponse({"status": "success", "boats": boatsData}, safe=False)
-    except Exception as e:
-        return JsonResponse({"status": "error", "message": str(e)}, safe=False)
-
-@require_http_methods(["GET"])
-@csrf_exempt
-def getAllBoatsNames(request):
-    try:
-        boats = Boat.objects.all()
         boatsNames = [boat.name for boat in boats]
         return JsonResponse({"status": "success", "boats": boatsNames}, safe=False)
     except Exception as e:
