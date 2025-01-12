@@ -52,8 +52,11 @@ def addCharter(request):
         boatName = request.POST.get("boatName")
         startDate = request.POST.get("startDate")
         endDate = request.POST.get("endDate")
-        price = request.POST.get("price")
         user = request.user
+
+        pricePerDay = Boat.objects.get(name=boatName).pricePerDay
+        price = pricePerDay * (datetime.datetime.strptime(endDate, "%Y-%m-%d").date() - datetime.datetime.strptime(startDate, "%Y-%m-%d").date()).days
+
 
         startDate = datetime.datetime.strptime(startDate, "%Y-%m-%d").date()
         endDate = datetime.datetime.strptime(endDate, "%Y-%m-%d").date()

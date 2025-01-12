@@ -8,7 +8,7 @@ urlpatterns = [
     path('register/', authViews.register),
     path('getUser/', authViews.getUser),
     path('changePassword/', authViews.changePassword),
-    path('changePassword/', authViews.changePassword),
+    path('changeEmail/', authViews.changeEmail),
     path('boats/', boatViews.getAllBoats),
     path('boats/byPort/', boatViews.getBoatsByPort),
     path('boats/byCompany/', boatViews.getBoatsByCompany),

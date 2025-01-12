@@ -36,6 +36,8 @@ def getPorts(request):
 def getPort(request):
     try:
         portName = request.GET.get("portName")
+        print(portName)
+
         port = Port.objects.get(name=portName)
 
         toReturn = {
