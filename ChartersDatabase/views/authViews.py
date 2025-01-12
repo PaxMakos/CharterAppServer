@@ -39,11 +39,12 @@ def register(request):
     try:
         username = request.POST['username']
         password = request.POST['password']
+        email = request.POST['email']
     except KeyError:
         return JsonResponse({'status': 'error', 'message': 'Missing username or password'})
 
     try:
-        user = User.objects.create_user(username=username, password=password)
+        user = User.objects.create_user(username=username, password=password, email=email)
         user.save()
         return JsonResponse({'status': 'success'})
     except ValidationError:
