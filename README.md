@@ -7,5 +7,5 @@ Starting:
 
 To add sample data:
 1. runserver on HTTP - python manage.py runserver
-2. execute add_users.py
+2. python add_users.py
 3. import data - python manage.py loaddata sample_data.json
