@@ -42,6 +42,8 @@ def getBoat(request):
             "width": boat.width,
             "draft": boat.draft,
             "company": boat.company,
+            "contactEmail": boat.contactEmail,
+            "contactPhone": boat.contactPhone,
             "motherPort": boat.motherPort.name,
             "beds": boat.beds,
             "pricePerDay": boat.pricePerDay,
