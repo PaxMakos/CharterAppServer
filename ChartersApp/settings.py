@@ -26,12 +26,15 @@ CSRF_COOKIE_SECURE = True
 SECRET_KEY = 'django-insecure-q*&v&l=&e)g$=7sd+3x0f5$#xm5$-%%_^t0+%v^(zo*7x3#5oc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["10.0.2.2",
                  "127.0.0.1",
                  "10.81.57.11",
                  "192.168.203.137"]
+
+if DEBUG:
+    SECURE_SSL_REDIRECT = False
 
 # Application definition
 
