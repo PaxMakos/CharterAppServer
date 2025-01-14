@@ -12,7 +12,7 @@ def getBoatPhotos(request):
         boatName = request.GET.get("boatName")
         boat = Boat.objects.get(name=boatName)
         photos = Photo.objects.filter(boat=boat)
-        photosUrls = [photo.photo.url for photo in photos]
+        photosUrls = [photo.photo.url.split('/')[-1] for photo in photos]
         return JsonResponse({"status": "success", "photos": photosUrls}, safe=False)
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, safe=False)
