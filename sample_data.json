@@ -1144,32 +1144,10 @@
     },
     {
         "model": "ChartersDatabase.charter",
-        "pk": 3,
-        "fields": {
-            "boat": 33,
-            "user": 2,
-            "startDate": "2023-08-01",
-            "endDate": "2023-08-10",
-            "price": 5400
-        }
-    },
-    {
-        "model": "ChartersDatabase.charter",
-        "pk": 4,
-        "fields": {
-            "boat": 34,
-            "user": 2,
-            "startDate": "2023-09-01",
-            "endDate": "2023-09-10",
-            "price": 5400
-        }
-    },
-    {
-        "model": "ChartersDatabase.charter",
         "pk": 5,
         "fields": {
             "boat": 35,
-            "user": 3,
+            "user": 1,
             "startDate": "2023-10-01",
             "endDate": "2023-10-07",
             "price": 3500
@@ -1180,7 +1158,7 @@
         "pk": 6,
         "fields": {
             "boat": 36,
-            "user": 3,
+            "user": 1,
             "startDate": "2023-11-01",
             "endDate": "2023-11-07",
             "price": 3500
@@ -1213,7 +1191,7 @@
         "pk": 9,
         "fields": {
             "boat": 39,
-            "user": 2,
+            "user": 1,
             "startDate": "2024-02-01",
             "endDate": "2024-02-07",
             "price": 3360
@@ -1224,7 +1202,7 @@
         "pk": 10,
         "fields": {
             "boat": 40,
-            "user": 2,
+            "user": 1,
             "startDate": "2024-03-01",
             "endDate": "2024-03-07",
             "price": 3360
@@ -1235,7 +1213,7 @@
         "pk": 11,
         "fields": {
             "boat": 41,
-            "user": 3,
+            "user": 1,
             "startDate": "2024-04-01",
             "endDate": "2024-04-07",
             "price": 3990
@@ -1246,7 +1224,7 @@
         "pk": 12,
         "fields": {
             "boat": 42,
-            "user": 3,
+            "user": 1,
             "startDate": "2024-05-01",
             "endDate": "2024-05-07",
             "price": 3990
@@ -1279,7 +1257,7 @@
         "pk": 15,
         "fields": {
             "boat": 45,
-            "user": 2,
+            "user": 1,
             "startDate": "2024-08-01",
             "endDate": "2024-08-10",
             "price": 5310
@@ -1290,7 +1268,7 @@
         "pk": 16,
         "fields": {
             "boat": 46,
-            "user": 2,
+            "user": 1,
             "startDate": "2024-09-01",
             "endDate": "2024-09-10",
             "price": 5310
@@ -1301,7 +1279,7 @@
         "pk": 17,
         "fields": {
             "boat": 47,
-            "user": 3,
+            "user": 1,
             "startDate": "2024-10-01",
             "endDate": "2024-10-07",
             "price": 4130
@@ -1312,7 +1290,7 @@
         "pk": 18,
         "fields": {
             "boat": 48,
-            "user": 3,
+            "user": 1,
             "startDate": "2024-11-01",
             "endDate": "2024-11-07",
             "price": 4130
@@ -1338,6 +1316,13 @@
             "startDate": "2025-01-01",
             "endDate": "2025-01-07",
             "price": 4130
+        }
+    },
+    {
+        "model": "ChartersDatabase.chat",
+        "pk": 1,
+        "fields": {
+            "title": "Gizycko 1"
         }
     }
 ]

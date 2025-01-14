@@ -64,7 +64,7 @@ class Chat(models.Model):
     title = models.CharField(max_length=255)
 
 class Message(models.Model):
-    chat = models.ForeignKey(Chat, related_name='messages', on_delete=models.CASCADE)
+    chat = models.ForeignKey(Chat, on_delete=models.CASCADE)
     content = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
     sender = models.CharField(max_length=255)
