@@ -2,7 +2,7 @@ from django.http import JsonResponse, FileResponse, Http404
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
 
-from ChartersDatabase.models import Boat, Photo
+from ..models import Boat, Photo
 
 
 @require_http_methods(["GET"])

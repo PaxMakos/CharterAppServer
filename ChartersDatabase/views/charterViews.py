@@ -28,7 +28,7 @@ def getChartersByBoat(request):
 @csrf_exempt
 def getChartersByUser(request):
     try:
-        user = request.user
+        user = request.GET.get("userName")
         charters = Charter.objects.filter(user=user)
 
         chartersList = []
