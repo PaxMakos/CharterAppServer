@@ -1,6 +1,5 @@
 from django.urls import path
-from .views import boatViews, charterViews, portViews, authViews, photoViews
-
+from .views import boatViews, charterViews, portViews, authViews, photoViews, chatViews, messageViews
 
 urlpatterns = [
     path('login/', authViews.loginToApp),
@@ -20,4 +19,8 @@ urlpatterns = [
     path('port/details/', portViews.getPort),
     path('boatPhotos/', photoViews.getBoatPhotos),
     path('photos/<str:img_name>/', photoViews.getPhoto),
+    path('chats/', chatViews.getAllChats),
+    path('chats/create/', chatViews.createChat),
+    path('messages/', messageViews.getMessagesByChat),
+    path('messages/create/', messageViews.createMessage),
     ]
