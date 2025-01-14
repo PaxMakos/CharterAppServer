@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import boatViews, charterViews, portViews, authViews, photoViews, chatViews, messageViews
 
+
 urlpatterns = [
     path('login/', authViews.loginToApp),
     path('logout/', authViews.logoutFromApp),

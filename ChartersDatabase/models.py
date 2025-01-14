@@ -69,3 +69,4 @@ class Message(models.Model):
     content = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
     sender = models.CharField(max_length=255)
+    sender = models.CharField(max_length=255)
