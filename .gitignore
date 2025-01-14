@@ -1,8 +1,0 @@
-_pycache_/
-__pycache__/
-venv/*
-cert.pem
-db.sqlite3
-key.pem
-004*
-ChartersDatabase/migrations/0004_boat_contactemail_boat_contactphone_port_latitude_and_more.py
