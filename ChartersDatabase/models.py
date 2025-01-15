@@ -44,13 +44,19 @@ class Photo(models.Model):
     photo = models.ImageField(upload_to='photos/')
     boat = models.ForeignKey(Boat, on_delete=models.CASCADE)
 
-
 class Chat(models.Model):
     title = models.CharField(max_length=255)
 
-
 class Message(models.Model):
     chat = models.ForeignKey(Chat, on_delete=models.CASCADE)
+    sequence_number = models.IntegerField(default=1)
     content = models.TextField()
-    timestamp = models.DateTimeField(auto_now_add=True)
-    sender = models.CharField(max_length=255)
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            last_message = Message.objects.filter(chat=self.chat).order_by('sequence_number').last()
+            if last_message:
+                self.sequence_number = last_message.sequence_number + 1
+            else:
+                self.sequence_number = 1
+        super(Message, self).save(*args, **kwargs)

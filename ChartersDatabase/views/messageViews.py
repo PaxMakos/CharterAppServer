@@ -7,18 +7,19 @@ from ..models import Chat, Message
 @csrf_exempt
 def getMessagesByChat(request):
     try:
-        chat_id = request.GET.get("chat_id")
-        messages = Message.objects.filter(chat_id=chat_id)
+        chat_title = request.GET.get("chat_title")
+        chat = Chat.objects.filter(title=chat_title).first()
+        messages = Message.objects.filter(chat=chat).order_by('sequence_number')
         messagesList = []
         for message in messages:
             messagesList.append({
                 "id": message.id,
+                "sequence_number": message.sequence_number,
                 "content": message.content,
-                "timestamp": message.timestamp,
-                "sender": message.sender,
             })
-
         return JsonResponse({"status": "success", "messages": messagesList}, safe=False)
+    except Chat.DoesNotExist:
+        return JsonResponse({"status": "error", "message": "Chat not found"}, safe=False)
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, safe=False)
 
@@ -26,16 +27,18 @@ def getMessagesByChat(request):
 @csrf_exempt
 def createMessage(request):
     try:
-        chat_id = request.POST.get("chat_id")
+        chat_title = request.POST.get("chat_title")
         content = request.POST.get("content")
-        sender = request.POST.get("sender")
-        chat = Chat.objects.get(id=chat_id)
-        message = Message.objects.create(chat=chat, content=content, sender=sender)
+        chat = Chat.objects.filter(title=chat_title).first()
+        if chat is None:
+            return JsonResponse({"status": "error", "message": "Chat not found"}, safe=False)
+        message = Message.objects.create(chat=chat, content=content)
         return JsonResponse({"status": "success", "message": {
             "id": message.id,
+            "sequence_number": message.sequence_number,
             "content": message.content,
-            "timestamp": message.timestamp,
-            "sender": message.sender,
         }}, safe=False)
+    except Chat.DoesNotExist:
+        return JsonResponse({"status": "error", "message": "Chat not found"}, safe=False)
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, safe=False)
