@@ -56,9 +56,14 @@ def addCharter(request):
         endDate = request.POST.get("endDate")
         user = request.user
 
+        if user.is_anonymous:
+            user = User.objects.get(username=request.POST.get("userName"))
+
+        if boatName is None or startDate is None or endDate is None:
+            return JsonResponse({"status": "error", "message": "Missing parameters"}, safe=False)
+
         pricePerDay = Boat.objects.get(name=boatName).pricePerDay
         price = pricePerDay * (datetime.datetime.strptime(endDate, "%Y-%m-%d").date() - datetime.datetime.strptime(startDate, "%Y-%m-%d").date()).days
-
 
         startDate = datetime.datetime.strptime(startDate, "%Y-%m-%d").date()
         endDate = datetime.datetime.strptime(endDate, "%Y-%m-%d").date()
@@ -78,4 +83,5 @@ def addCharter(request):
 
         return JsonResponse({"status": "success", "message": "Charter added successfully"}, safe=False)
     except Exception as e:
-        return JsonResponse({"status": "error", "message": str(e)}, safe=False)
+
+        return JsonResponse({"status": "error", "message": f"{type(e).__name__}: {str(e)}"}, safe=False)
