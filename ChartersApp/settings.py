@@ -19,12 +19,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-#SECURE_SSL_REDIRECT = True
-#SESSION_COOKIE_SECURE = True
-#SCSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+SCSRF_COOKIE_SECURE = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-q*&v&l=&e)g$=7sd+3x0f5$#xm5$-%%_^t0+%v^(zo*7x3#5oc'
+SECRET_KEY = '' # Add your secret key here
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
